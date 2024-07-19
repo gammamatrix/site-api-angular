@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-family: Source SansSerif Pro, Arial, sans-serif;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2rem;
+                background-color: #fff;
+                color: #000;
+            }
+
+            body > ul > li {
+                font-size: larger;
+            }
+
+            h2 {
+                font-size: larger;
+                text-decoration-line: underline;
+                text-decoration-thickness: 2px;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0 0 2rem;
+                padding: 0 0 0 1rem;
+                text-indent: -1rem;
+            }
+
+            .success:before {
+                color: #4e9a06;
+                content: '✓';
+                padding-right: 0.5rem;
+            }
+
+            .defect {
+                color: #a40000;
+            }
+
+            .defect:before {
+                color: #a40000;
+                content: '✗';
+                padding-right: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Abstract (Tests\Unit\Playground\Auth\Policies\Policy\Abstract)</h2>
+        <ul>
+            <li class="success">Before with root</li>
+            <li class="success">Before with root as secondary fails</li>
+            <li class="success">Index without role</li>
+            <li class="success">Index with admin</li>
+            <li class="success">View without role</li>
+            <li class="success">View with admin</li>
+            <li class="success">View with admin in roles</li>
+        </ul>
+        <h2>Abstract Role (Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRole)</h2>
+        <ul>
+            <li class="success">Create without role</li>
+            <li class="success">Create with admin</li>
+            <li class="success">Delete without role</li>
+            <li class="success">Delete with admin</li>
+            <li class="success">Delete locked with admin</li>
+            <li class="success">Detail without role</li>
+            <li class="success">Detail with admin</li>
+            <li class="success">Edit without role</li>
+            <li class="success">Edit with admin</li>
+            <li class="success">ForceDelete without role</li>
+            <li class="success">ForceDelete with admin</li>
+            <li class="success">Lock without role</li>
+            <li class="success">Lock with admin</li>
+            <li class="success">Manage without role</li>
+            <li class="success">Manage with admin</li>
+            <li class="success">Restore without role</li>
+            <li class="success">Restore with admin</li>
+            <li class="success">Store without role</li>
+            <li class="success">Store with admin</li>
+            <li class="success">Update without role</li>
+            <li class="success">Update with admin</li>
+            <li class="success">Update locked with admin</li>
+            <li class="success">Unlock without role</li>
+            <li class="success">Unlock with admin</li>
+        </ul>
+        <h2>Array Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\ArrayTrait)</h2>
+        <ul>
+            <li class="success">Filter array</li>
+            <li class="success">FilterArray to json</li>
+        </ul>
+        <h2>Bits Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\BitsTrait)</h2>
+        <ul>
+            <li class="success">FilterBits for exponent zero</li>
+            <li class="success">FilterBits for exponent greater than zero</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Auth\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Cms\Api\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Cms\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Http\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Test\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Unit\Playground\Auth\Console\Commands\HashPassword\Command)</h2>
+        <ul>
+            <li class="success">Command auth hash password with json</li>
+            <li class="success">Command auth hash password</li>
+            <li class="success">Command auth hash password without argument and fail</li>
+        </ul>
+        <h2>Create Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Page\CreateRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+        </ul>
+        <h2>Create Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Snippet\CreateRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+        </ul>
+        <h2>Date Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\DateTrait)</h2>
+        <ul>
+            <li class="success">Filter date</li>
+            <li class="success">Filter date as carbon</li>
+        </ul>
+        <h2>Example (Tests\Feature\Example)</h2>
+        <ul>
+            <li class="success">The application returns a successful response</li>
+        </ul>
+        <h2>Example (Tests\Unit\Example)</h2>
+        <ul>
+            <li class="success">That true is true</li>
+        </ul>
+        <h2>Instance (Tests\Feature\Playground\Cms\Api\Http\Requests\FormRequest\Instance)</h2>
+        <ul>
+            <li class="success">FormRequest authorize with admin</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Cms\Api\Http\Requests\FormRequest\Instance)</h2>
+        <ul>
+            <li class="success">FormRequest authorize without user</li>
+            <li class="success">RULES is empty by default</li>
+            <li class="success">UserHasAdminPrivileges without user</li>
+            <li class="success">UserHasAdminPrivileges with admin</li>
+            <li class="success">UserHasAdminPrivileges with default laravel user</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Cms\Api\ServiceProvider\Instance)</h2>
+        <ul>
+            <li class="success">Version matches</li>
+            <li class="success">SetPolicies with empty array</li>
+            <li class="success">SetPolicies with invalid model</li>
+            <li class="success">SetPolicies with invalid policy</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\ServiceProvider\Instance)</h2>
+        <ul>
+            <li class="success">Version</li>
+            <li class="success">UserPrimaryKeyType with empty model</li>
+            <li class="success">UserPrimaryKeyType with incrementing model</li>
+            <li class="success">UserPrimaryKeyType with uuid model</li>
+            <li class="success">UserPrimaryKeyType with exception</li>
+        </ul>
+        <h2>Model (Tests\Feature\Playground\Cms\Models\PageRevision\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Factory create</li>
+        </ul>
+        <h2>Model (Tests\Feature\Playground\Cms\Models\Page\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Factory create</li>
+        </ul>
+        <h2>Model (Tests\Feature\Playground\Cms\Models\SnippetRevision\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Factory create</li>
+        </ul>
+        <h2>Model (Tests\Feature\Playground\Cms\Models\Snippet\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Factory create</li>
+        </ul>
+        <h2>Model (Tests\Feature\Playground\Models\User\Model)</h2>
+        <ul>
+            <li class="success">Save model in database</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Cms\Models\PageRevision\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Model factory make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Cms\Models\Page\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Model factory make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Cms\Models\SnippetRevision\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Model factory make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Cms\Models\Snippet\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Model factory make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Model\Model)</h2>
+        <ul>
+            <li class="success">WithChildren children returns HasMany</li>
+            <li class="success">WithCreator creator returns HasOne</li>
+            <li class="success">WithModifier modifier returns HasOne</li>
+            <li class="success">WithOwner owner returns HasOne</li>
+            <li class="success">WithParent parent returns HasOne</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterColumns\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterColumns returns query without columns or filters</li>
+            <li class="success">ScopeFilterColumns returns query without filters</li>
+            <li class="success">ScopeFilterColumns returns query with invalid column</li>
+            <li class="success">ScopeFilterColumns returns query with filters without meta for strings</li>
+            <li class="success">ScopeFilterColumns returns query with null comparison and ignore</li>
+            <li class="success">ScopeFilterColumns returns query with comparison</li>
+            <li class="success">ScopeFilterColumns with boolean filter type and null value</li>
+            <li class="success">ScopeFilterColumns with boolean filter type and true value</li>
+            <li class="success">ScopeFilterColumns with boolean filter type and false value</li>
+            <li class="success">ScopeFilterColumns with filter operator without operator and default to like</li>
+            <li class="success">ScopeFilterColumns with filter operators</li>
+            <li class="success">ScopeFilterColumns with between filter operator without single parameter and ignore between</li>
+            <li class="success">ScopeFilterColumns with between filter operator</li>
+            <li class="success">ScopeFilterColumns with not between filter operator without single parameter and ignore between</li>
+            <li class="success">ScopeFilterColumns with not between filter operator</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterDates\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterDates returns query without dates or filters</li>
+            <li class="success">ScopeFilterDates returns query without filters</li>
+            <li class="success">ScopeFilterDates returns query with invalid column</li>
+            <li class="success">ScopeFilterDates returns query with filters without meta for strings</li>
+            <li class="success">ScopeFilterDates returns query with null comparison and ignore</li>
+            <li class="success">ScopeFilterDates returns query with null comparison and allow</li>
+            <li class="success">ScopeFilterDates returns query with comparison</li>
+            <li class="success">ScopeFilterDates returns query with wildcard</li>
+            <li class="success">ScopeFilterDates returns query with operator wildcard</li>
+            <li class="success">ScopeFilterDates returns query with object value and ignore</li>
+            <li class="success">ScopeFilterDates returns query with unnullable value and ignore</li>
+            <li class="success">ScopeFilterDates returns query with invalid operator and use like</li>
+            <li class="success">ScopeFilterDates returns query with invalid parsable value and ignore</li>
+            <li class="success">ScopeFilterDates returns query with short date and gte operator</li>
+            <li class="success">ScopeFilterDates returns query with phrase date and automatically parse</li>
+            <li class="success">ScopeFilterDates with between filter operator with parse</li>
+            <li class="success">ScopeFilterDates with not between filter operator with parse</li>
+            <li class="success">ScopeFilterDates with filter operators</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterFlags\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterFlags returns query without flags or filters</li>
+            <li class="success">ScopeFilterFlags returns query without filters</li>
+            <li class="success">ScopeFilterFlags returns query with filters</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterIds\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterIds returns query without ids or filters</li>
+            <li class="success">ScopeFilterIds returns query without filters</li>
+            <li class="success">ScopeFilterIds returns query with invalid column</li>
+            <li class="success">ScopeFilterIds returns query with null comparison</li>
+            <li class="success">ScopeFilterIds returns query with comparison</li>
+            <li class="success">ScopeFilterIds returns query with filters array</li>
+            <li class="success">ScopeFilterIds returns query with filters with integer</li>
+            <li class="success">ScopeFilterIds returns query with array of ids without type</li>
+            <li class="success">ScopeFilterIds returns query with array of uuids for integer type ids and ignore</li>
+            <li class="success">ScopeFilterIds returns query with array of integer ids ignore duplicate id</li>
+            <li class="success">ScopeFilterIds returns query with filters with null and string and array</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterTrash\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterTrash returns query with empty visibility</li>
+            <li class="success">ScopeFilterTrash returns query with trash</li>
+            <li class="success">ScopeFilterTrash returns query with only trash</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeSort\Model)</h2>
+        <ul>
+            <li class="success">ScopeSort returns query with empty sort</li>
+            <li class="success">ScopeSort returns query with array boolean sort asc</li>
+            <li class="success">ScopeSort returns query with array boolean sort desc</li>
+            <li class="success">ScopeSort returns query with array boolean sort pair</li>
+            <li class="success">ScopeSort returns query with array boolean sort triplet</li>
+            <li class="success">ScopeSort returns query with csv sort asc</li>
+            <li class="success">ScopeSort returns query with csv sort desc</li>
+            <li class="success">ScopeSort returns query with simple array asc</li>
+            <li class="success">ScopeSort returns query with simple array desc</li>
+            <li class="success">ScopeSort returns query with hash array asc</li>
+            <li class="success">ScopeSort returns query with hash array desc</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\User\Model)</h2>
+        <ul>
+            <li class="success">Add has and remove Abilities</li>
+            <li class="success">Add has and remove Privileges</li>
+            <li class="success">Add has and remove Roles</li>
+            <li class="success">IsAdmin with admins and users</li>
+        </ul>
+        <h2>Number Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\NumberTrait)</h2>
+        <ul>
+            <li class="success">Filter float</li>
+            <li class="success">Filter integer</li>
+            <li class="success">Filter integer id</li>
+            <li class="success">Filter integer positive</li>
+            <li class="success">Filter percent</li>
+        </ul>
+        <h2>Page Route (Tests\Feature\Playground\Cms\Api\Http\Controllers\Playground\PageRoute)</h2>
+        <ul>
+            <li class="success">Json guest cannot see info</li>
+            <li class="success">Json guest cannot destroy</li>
+            <li class="success">Json guest cannot restore</li>
+            <li class="success">Json guest cannot get index</li>
+            <li class="success">Json guest cannot get revisions</li>
+            <li class="success">Json guest cannot lock</li>
+            <li class="success">Json guest cannot unlock</li>
+            <li class="success">Json guest cannot get create info</li>
+            <li class="success">Json guest cannot get edit info</li>
+            <li class="success">Json guest cannot render revision view</li>
+            <li class="success">Json guest cannot restore revision</li>
+            <li class="success">Json guest cannot store</li>
+            <li class="success">Json guest cannot update</li>
+            <li class="success">Json admin can get index</li>
+            <li class="success">Json show info for admin</li>
+            <li class="success">Json admin can get create info</li>
+            <li class="success">Json admin can get edit info</li>
+            <li class="success">Json destroy as admin and succeed</li>
+            <li class="success">Json admin can get revisions</li>
+            <li class="success">Json restore as admin and succeed</li>
+            <li class="success">Json update as admin without payload and fail validation</li>
+            <li class="success">Json lock as admin and succeed</li>
+            <li class="success">Json store as admin without payload and fail validation</li>
+            <li class="success">Json unlock as admin and succeed</li>
+            <li class="success">Json admin can get revision info</li>
+            <li class="success">Json get create info as admin with invalid parameter and fail validation</li>
+            <li class="success">Json restore revision as admin and succeed</li>
+            <li class="success">Json admin can get index with filters</li>
+            <li class="success">Json edit as admin and fail validation with invalid parameter</li>
+            <li class="success">Json admin can update</li>
+            <li class="success">Json store as admin and succeed</li>
+            <li class="success">Json lock as admin and succeed with no redirect</li>
+            <li class="success">Json destroy as admin and succeed with force delete</li>
+            <li class="success">Json restore as admin and succeed with no redirect</li>
+            <li class="success">Json admin can get revisions with filters</li>
+            <li class="success">Json unlock as admin and succeed with no redirect</li>
+            <li class="success">Json restore revision as admin and succeed without redirect</li>
+            <li class="success">Json destroy as admin and succeed with no content</li>
+            <li class="success">Json lock as user and get denied</li>
+            <li class="success">Json restore as user and get denied</li>
+            <li class="success">Json unlock as user and get denied</li>
+            <li class="success">Json destroy as admin and succeed and ignore redirect</li>
+            <li class="success">Json restore revision as user and get denied</li>
+            <li class="success">Json destroy as user and get denied and no force delete allowed</li>
+        </ul>
+        <h2>Phone Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\PhoneTrait)</h2>
+        <ul>
+            <li class="success">Filter phone</li>
+        </ul>
+        <h2>Policy (Tests\Unit\Playground\Cms\Api\Policies\PagePolicy\Policy)</h2>
+        <ul>
+            <li class="success">Policy instance</li>
+        </ul>
+        <h2>Policy (Tests\Unit\Playground\Cms\Api\Policies\SnippetPolicy\Policy)</h2>
+        <ul>
+            <li class="success">Policy instance</li>
+        </ul>
+        <h2>Snippet Route (Tests\Feature\Playground\Cms\Api\Http\Controllers\Playground\SnippetRoute)</h2>
+        <ul>
+            <li class="success">Json guest cannot see info</li>
+            <li class="success">Json guest cannot destroy</li>
+            <li class="success">Json guest cannot restore</li>
+            <li class="success">Json guest cannot get index</li>
+            <li class="success">Json guest cannot get revisions</li>
+            <li class="success">Json guest cannot lock</li>
+            <li class="success">Json guest cannot unlock</li>
+            <li class="success">Json guest cannot get create info</li>
+            <li class="success">Json guest cannot get edit info</li>
+            <li class="success">Json guest cannot render revision view</li>
+            <li class="success">Json guest cannot restore revision</li>
+            <li class="success">Json guest cannot store</li>
+            <li class="success">Json guest cannot update</li>
+            <li class="success">Json admin can get index</li>
+            <li class="success">Json show info for admin</li>
+            <li class="success">Json admin can get create info</li>
+            <li class="success">Json admin can get edit info</li>
+            <li class="success">Json destroy as admin and succeed</li>
+            <li class="success">Json admin can get revisions</li>
+            <li class="success">Json restore as admin and succeed</li>
+            <li class="success">Json update as admin without payload and fail validation</li>
+            <li class="success">Json lock as admin and succeed</li>
+            <li class="success">Json store as admin without payload and fail validation</li>
+            <li class="success">Json unlock as admin and succeed</li>
+            <li class="success">Json admin can get revision info</li>
+            <li class="success">Json get create info as admin with invalid parameter and fail validation</li>
+            <li class="success">Json restore revision as admin and succeed</li>
+            <li class="success">Json admin can get index with filters</li>
+            <li class="success">Json edit as admin and fail validation with invalid parameter</li>
+            <li class="success">Json admin can update</li>
+            <li class="success">Json store as admin and succeed</li>
+            <li class="success">Json lock as admin and succeed with no redirect</li>
+            <li class="success">Json destroy as admin and succeed with force delete</li>
+            <li class="success">Json restore as admin and succeed with no redirect</li>
+            <li class="success">Json admin can get revisions with filters</li>
+            <li class="success">Json unlock as admin and succeed with no redirect</li>
+            <li class="success">Json restore revision as admin and succeed without redirect</li>
+            <li class="success">Json destroy as admin and succeed with no content</li>
+            <li class="success">Json lock as user and get denied</li>
+            <li class="success">Json restore as user and get denied</li>
+            <li class="success">Json unlock as user and get denied</li>
+            <li class="success">Json destroy as admin and succeed and ignore redirect</li>
+            <li class="success">Json restore revision as user and get denied</li>
+            <li class="success">Json destroy as user and get denied and no force delete allowed</li>
+        </ul>
+        <h2>Status Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\StatusTrait)</h2>
+        <ul>
+            <li class="success">FilterStatus with empty input</li>
+            <li class="success">FilterStatus with integer</li>
+            <li class="success">FilterStatus with integer as string</li>
+            <li class="success">FilterStatus with integer as negative float</li>
+            <li class="success">FilterStatus with map</li>
+        </ul>
+        <h2>Store Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Page\StoreRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+            <li class="success">StoreRequest rules with optional revisions disabled</li>
+            <li class="success">StoreRequest rules with optional revisions enabled</li>
+        </ul>
+        <h2>Store Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Snippet\StoreRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+            <li class="success">StoreRequest rules with optional revisions disabled</li>
+            <li class="success">StoreRequest rules with optional revisions enabled</li>
+        </ul>
+        <h2>System Fields Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\SystemFieldsTrait)</h2>
+        <ul>
+            <li class="success">FilterSystemFields with empty input</li>
+            <li class="success">FilterSystemFields for groups</li>
+            <li class="success">FilterSystemFields for valid permissions</li>
+            <li class="success">FilterSystemFields for invalid permissions</li>
+            <li class="success">FilterSystemFields for rank</li>
+            <li class="success">FilterSystemFields for size</li>
+        </ul>
+        <h2>Trait (Tests\Unit\Playground\Auth\Policies\PolicyTrait\Trait)</h2>
+        <ul>
+            <li class="success">Get entity</li>
+            <li class="success">Get package</li>
+            <li class="success">Has token</li>
+            <li class="success">Get token</li>
+            <li class="success">Set token</li>
+            <li class="success">Verify does not log when app debugging is disabled</li>
+            <li class="success">Verify does not log when auth debugging is disabled</li>
+            <li class="success">Verify logs with debugging enabled</li>
+            <li class="success">Verify privileges</li>
+            <li class="success">Verify roles</li>
+            <li class="success">Verify user</li>
+        </ul>
+        <h2>Trait (Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\Trait)</h2>
+        <ul>
+            <li class="success">Privilege PrivilegePolicy without parameter</li>
+            <li class="success">Privilege PrivilegeModelPolicy without parameter</li>
+            <li class="success">Privilege UserPolicy without parameter</li>
+            <li class="success">Privilege with package and without parameter</li>
+            <li class="success">Privilege with package and entity and without parameter</li>
+            <li class="success">Has privilege</li>
+            <li class="success">HasPrivilege with user hasPrivilege</li>
+            <li class="success">HasPrivilege with user privileges</li>
+            <li class="success">HasPrivilege without privileges enabled</li>
+        </ul>
+        <h2>Trait (Tests\Unit\Playground\Auth\Policies\RoleTrait\Trait)</h2>
+        <ul>
+            <li class="success">Get roles for admin</li>
+            <li class="success">Get roles for action</li>
+            <li class="success">Get roles to view</li>
+            <li class="success">Has role</li>
+            <li class="success">HasRole advanced role</li>
+        </ul>
+        <h2>Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreContent\Trait)</h2>
+        <ul>
+            <li class="success">Purify</li>
+            <li class="success">Exorcise</li>
+            <li class="success">Get html purifier</li>
+            <li class="success">GetHtmlPurifier with iframes</li>
+            <li class="success">GetHtmlPurifier with purifier path</li>
+        </ul>
+        <h2>Update Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Page\UpdateRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+            <li class="success">UpdateRequest rules with optional revisions disabled</li>
+            <li class="success">UpdateRequest rules with optional revisions enabled</li>
+        </ul>
+        <h2>Update Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Snippet\UpdateRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+            <li class="success">UpdateRequest rules with optional revisions disabled</li>
+            <li class="success">UpdateRequest rules with optional revisions enabled</li>
+        </ul>
+        <h2>Uuid Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\UuidTrait)</h2>
+        <ul>
+            <li class="success">Filter uuid</li>
+        </ul>
+        <h2>Value Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\ValueTrait)</h2>
+        <ul>
+            <li class="success">Filter boolean</li>
+            <li class="success">Filter email</li>
+            <li class="success">Filter html</li>
+        </ul>
+    </body>
+</html>

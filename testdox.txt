@@ -1,0 +1,423 @@
+Abstract (Tests\Unit\Playground\Auth\Policies\Policy\Abstract)
+ [x] Before with root
+ [x] Before with root as secondary fails
+ [x] Index without role
+ [x] Index with admin
+ [x] View without role
+ [x] View with admin
+ [x] View with admin in roles
+
+Abstract Role (Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRole)
+ [x] Create without role
+ [x] Create with admin
+ [x] Delete without role
+ [x] Delete with admin
+ [x] Delete locked with admin
+ [x] Detail without role
+ [x] Detail with admin
+ [x] Edit without role
+ [x] Edit with admin
+ [x] ForceDelete without role
+ [x] ForceDelete with admin
+ [x] Lock without role
+ [x] Lock with admin
+ [x] Manage without role
+ [x] Manage with admin
+ [x] Restore without role
+ [x] Restore with admin
+ [x] Store without role
+ [x] Store with admin
+ [x] Update without role
+ [x] Update with admin
+ [x] Update locked with admin
+ [x] Unlock without role
+ [x] Unlock with admin
+
+Array Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\ArrayTrait)
+ [x] Filter array
+ [x] FilterArray to json
+
+Bits Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\BitsTrait)
+ [x] FilterBits for exponent zero
+ [x] FilterBits for exponent greater than zero
+
+Command (Tests\Feature\Playground\Auth\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Feature\Playground\Cms\Api\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Feature\Playground\Cms\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Feature\Playground\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Feature\Playground\Http\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Feature\Playground\Test\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Unit\Playground\Auth\Console\Commands\HashPassword\Command)
+ [x] Command auth hash password with json
+ [x] Command auth hash password
+ [x] Command auth hash password without argument and fail
+
+Create Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Page\CreateRequest)
+ [x] Request instance
+
+Create Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Snippet\CreateRequest)
+ [x] Request instance
+
+Date Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\DateTrait)
+ [x] Filter date
+ [x] Filter date as carbon
+
+Example (Tests\Feature\Example)
+ [x] The application returns a successful response
+
+Example (Tests\Unit\Example)
+ [x] That true is true
+
+Instance (Tests\Feature\Playground\Cms\Api\Http\Requests\FormRequest\Instance)
+ [x] FormRequest authorize with admin
+
+Instance (Tests\Unit\Playground\Cms\Api\Http\Requests\FormRequest\Instance)
+ [x] FormRequest authorize without user
+ [x] RULES is empty by default
+ [x] UserHasAdminPrivileges without user
+ [x] UserHasAdminPrivileges with admin
+ [x] UserHasAdminPrivileges with default laravel user
+
+Instance (Tests\Unit\Playground\Cms\Api\ServiceProvider\Instance)
+ [x] Version matches
+ [x] SetPolicies with empty array
+ [x] SetPolicies with invalid model
+ [x] SetPolicies with invalid policy
+
+Instance (Tests\Unit\Playground\ServiceProvider\Instance)
+ [x] Version
+ [x] UserPrimaryKeyType with empty model
+ [x] UserPrimaryKeyType with incrementing model
+ [x] UserPrimaryKeyType with uuid model
+ [x] UserPrimaryKeyType with exception
+
+Model (Tests\Feature\Playground\Cms\Models\PageRevision\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Cms\Models\Page\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Cms\Models\SnippetRevision\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Cms\Models\Snippet\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Models\User\Model)
+ [x] Save model in database
+
+Model (Tests\Unit\Playground\Cms\Models\PageRevision\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Cms\Models\Page\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Cms\Models\SnippetRevision\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Cms\Models\Snippet\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Models\Model\Model)
+ [x] WithChildren children returns HasMany
+ [x] WithCreator creator returns HasOne
+ [x] WithModifier modifier returns HasOne
+ [x] WithOwner owner returns HasOne
+ [x] WithParent parent returns HasOne
+
+Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterColumns\Model)
+ [x] ScopeFilterColumns returns query without columns or filters
+ [x] ScopeFilterColumns returns query without filters
+ [x] ScopeFilterColumns returns query with invalid column
+ [x] ScopeFilterColumns returns query with filters without meta for strings
+ [x] ScopeFilterColumns returns query with null comparison and ignore
+ [x] ScopeFilterColumns returns query with comparison
+ [x] ScopeFilterColumns with boolean filter type and null value
+ [x] ScopeFilterColumns with boolean filter type and true value
+ [x] ScopeFilterColumns with boolean filter type and false value
+ [x] ScopeFilterColumns with filter operator without operator and default to like
+ [x] ScopeFilterColumns with filter operators
+ [x] ScopeFilterColumns with between filter operator without single parameter and ignore between
+ [x] ScopeFilterColumns with between filter operator
+ [x] ScopeFilterColumns with not between filter operator without single parameter and ignore between
+ [x] ScopeFilterColumns with not between filter operator
+
+Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterDates\Model)
+ [x] ScopeFilterDates returns query without dates or filters
+ [x] ScopeFilterDates returns query without filters
+ [x] ScopeFilterDates returns query with invalid column
+ [x] ScopeFilterDates returns query with filters without meta for strings
+ [x] ScopeFilterDates returns query with null comparison and ignore
+ [x] ScopeFilterDates returns query with null comparison and allow
+ [x] ScopeFilterDates returns query with comparison
+ [x] ScopeFilterDates returns query with wildcard
+ [x] ScopeFilterDates returns query with operator wildcard
+ [x] ScopeFilterDates returns query with object value and ignore
+ [x] ScopeFilterDates returns query with unnullable value and ignore
+ [x] ScopeFilterDates returns query with invalid operator and use like
+ [x] ScopeFilterDates returns query with invalid parsable value and ignore
+ [x] ScopeFilterDates returns query with short date and gte operator
+ [x] ScopeFilterDates returns query with phrase date and automatically parse
+ [x] ScopeFilterDates with between filter operator with parse
+ [x] ScopeFilterDates with not between filter operator with parse
+ [x] ScopeFilterDates with filter operators
+
+Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterFlags\Model)
+ [x] ScopeFilterFlags returns query without flags or filters
+ [x] ScopeFilterFlags returns query without filters
+ [x] ScopeFilterFlags returns query with filters
+
+Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterIds\Model)
+ [x] ScopeFilterIds returns query without ids or filters
+ [x] ScopeFilterIds returns query without filters
+ [x] ScopeFilterIds returns query with invalid column
+ [x] ScopeFilterIds returns query with null comparison
+ [x] ScopeFilterIds returns query with comparison
+ [x] ScopeFilterIds returns query with filters array
+ [x] ScopeFilterIds returns query with filters with integer
+ [x] ScopeFilterIds returns query with array of ids without type
+ [x] ScopeFilterIds returns query with array of uuids for integer type ids and ignore
+ [x] ScopeFilterIds returns query with array of integer ids ignore duplicate id
+ [x] ScopeFilterIds returns query with filters with null and string and array
+
+Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterTrash\Model)
+ [x] ScopeFilterTrash returns query with empty visibility
+ [x] ScopeFilterTrash returns query with trash
+ [x] ScopeFilterTrash returns query with only trash
+
+Model (Tests\Unit\Playground\Models\Scopes\ScopeSort\Model)
+ [x] ScopeSort returns query with empty sort
+ [x] ScopeSort returns query with array boolean sort asc
+ [x] ScopeSort returns query with array boolean sort desc
+ [x] ScopeSort returns query with array boolean sort pair
+ [x] ScopeSort returns query with array boolean sort triplet
+ [x] ScopeSort returns query with csv sort asc
+ [x] ScopeSort returns query with csv sort desc
+ [x] ScopeSort returns query with simple array asc
+ [x] ScopeSort returns query with simple array desc
+ [x] ScopeSort returns query with hash array asc
+ [x] ScopeSort returns query with hash array desc
+
+Model (Tests\Unit\Playground\Models\User\Model)
+ [x] Add has and remove Abilities
+ [x] Add has and remove Privileges
+ [x] Add has and remove Roles
+ [x] IsAdmin with admins and users
+
+Number Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\NumberTrait)
+ [x] Filter float
+ [x] Filter integer
+ [x] Filter integer id
+ [x] Filter integer positive
+ [x] Filter percent
+
+Page Route (Tests\Feature\Playground\Cms\Api\Http\Controllers\Playground\PageRoute)
+ [x] Json guest cannot see info
+ [x] Json guest cannot destroy
+ [x] Json guest cannot restore
+ [x] Json guest cannot get index
+ [x] Json guest cannot get revisions
+ [x] Json guest cannot lock
+ [x] Json guest cannot unlock
+ [x] Json guest cannot get create info
+ [x] Json guest cannot get edit info
+ [x] Json guest cannot render revision view
+ [x] Json guest cannot restore revision
+ [x] Json guest cannot store
+ [x] Json guest cannot update
+ [x] Json admin can get index
+ [x] Json show info for admin
+ [x] Json admin can get create info
+ [x] Json admin can get edit info
+ [x] Json destroy as admin and succeed
+ [x] Json admin can get revisions
+ [x] Json restore as admin and succeed
+ [x] Json update as admin without payload and fail validation
+ [x] Json lock as admin and succeed
+ [x] Json store as admin without payload and fail validation
+ [x] Json unlock as admin and succeed
+ [x] Json admin can get revision info
+ [x] Json get create info as admin with invalid parameter and fail validation
+ [x] Json restore revision as admin and succeed
+ [x] Json admin can get index with filters
+ [x] Json edit as admin and fail validation with invalid parameter
+ [x] Json admin can update
+ [x] Json store as admin and succeed
+ [x] Json lock as admin and succeed with no redirect
+ [x] Json destroy as admin and succeed with force delete
+ [x] Json restore as admin and succeed with no redirect
+ [x] Json admin can get revisions with filters
+ [x] Json unlock as admin and succeed with no redirect
+ [x] Json restore revision as admin and succeed without redirect
+ [x] Json destroy as admin and succeed with no content
+ [x] Json lock as user and get denied
+ [x] Json restore as user and get denied
+ [x] Json unlock as user and get denied
+ [x] Json destroy as admin and succeed and ignore redirect
+ [x] Json restore revision as user and get denied
+ [x] Json destroy as user and get denied and no force delete allowed
+
+Phone Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\PhoneTrait)
+ [x] Filter phone
+
+Policy (Tests\Unit\Playground\Cms\Api\Policies\PagePolicy\Policy)
+ [x] Policy instance
+
+Policy (Tests\Unit\Playground\Cms\Api\Policies\SnippetPolicy\Policy)
+ [x] Policy instance
+
+Snippet Route (Tests\Feature\Playground\Cms\Api\Http\Controllers\Playground\SnippetRoute)
+ [x] Json guest cannot see info
+ [x] Json guest cannot destroy
+ [x] Json guest cannot restore
+ [x] Json guest cannot get index
+ [x] Json guest cannot get revisions
+ [x] Json guest cannot lock
+ [x] Json guest cannot unlock
+ [x] Json guest cannot get create info
+ [x] Json guest cannot get edit info
+ [x] Json guest cannot render revision view
+ [x] Json guest cannot restore revision
+ [x] Json guest cannot store
+ [x] Json guest cannot update
+ [x] Json admin can get index
+ [x] Json show info for admin
+ [x] Json admin can get create info
+ [x] Json admin can get edit info
+ [x] Json destroy as admin and succeed
+ [x] Json admin can get revisions
+ [x] Json restore as admin and succeed
+ [x] Json update as admin without payload and fail validation
+ [x] Json lock as admin and succeed
+ [x] Json store as admin without payload and fail validation
+ [x] Json unlock as admin and succeed
+ [x] Json admin can get revision info
+ [x] Json get create info as admin with invalid parameter and fail validation
+ [x] Json restore revision as admin and succeed
+ [x] Json admin can get index with filters
+ [x] Json edit as admin and fail validation with invalid parameter
+ [x] Json admin can update
+ [x] Json store as admin and succeed
+ [x] Json lock as admin and succeed with no redirect
+ [x] Json destroy as admin and succeed with force delete
+ [x] Json restore as admin and succeed with no redirect
+ [x] Json admin can get revisions with filters
+ [x] Json unlock as admin and succeed with no redirect
+ [x] Json restore revision as admin and succeed without redirect
+ [x] Json destroy as admin and succeed with no content
+ [x] Json lock as user and get denied
+ [x] Json restore as user and get denied
+ [x] Json unlock as user and get denied
+ [x] Json destroy as admin and succeed and ignore redirect
+ [x] Json restore revision as user and get denied
+ [x] Json destroy as user and get denied and no force delete allowed
+
+Status Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\StatusTrait)
+ [x] FilterStatus with empty input
+ [x] FilterStatus with integer
+ [x] FilterStatus with integer as string
+ [x] FilterStatus with integer as negative float
+ [x] FilterStatus with map
+
+Store Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Page\StoreRequest)
+ [x] Request instance
+ [x] StoreRequest rules with optional revisions disabled
+ [x] StoreRequest rules with optional revisions enabled
+
+Store Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Snippet\StoreRequest)
+ [x] Request instance
+ [x] StoreRequest rules with optional revisions disabled
+ [x] StoreRequest rules with optional revisions enabled
+
+System Fields Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\SystemFieldsTrait)
+ [x] FilterSystemFields with empty input
+ [x] FilterSystemFields for groups
+ [x] FilterSystemFields for valid permissions
+ [x] FilterSystemFields for invalid permissions
+ [x] FilterSystemFields for rank
+ [x] FilterSystemFields for size
+
+Trait (Tests\Unit\Playground\Auth\Policies\PolicyTrait\Trait)
+ [x] Get entity
+ [x] Get package
+ [x] Has token
+ [x] Get token
+ [x] Set token
+ [x] Verify does not log when app debugging is disabled
+ [x] Verify does not log when auth debugging is disabled
+ [x] Verify logs with debugging enabled
+ [x] Verify privileges
+ [x] Verify roles
+ [x] Verify user
+
+Trait (Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\Trait)
+ [x] Privilege PrivilegePolicy without parameter
+ [x] Privilege PrivilegeModelPolicy without parameter
+ [x] Privilege UserPolicy without parameter
+ [x] Privilege with package and without parameter
+ [x] Privilege with package and entity and without parameter
+ [x] Has privilege
+ [x] HasPrivilege with user hasPrivilege
+ [x] HasPrivilege with user privileges
+ [x] HasPrivilege without privileges enabled
+
+Trait (Tests\Unit\Playground\Auth\Policies\RoleTrait\Trait)
+ [x] Get roles for admin
+ [x] Get roles for action
+ [x] Get roles to view
+ [x] Has role
+ [x] HasRole advanced role
+
+Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreContent\Trait)
+ [x] Purify
+ [x] Exorcise
+ [x] Get html purifier
+ [x] GetHtmlPurifier with iframes
+ [x] GetHtmlPurifier with purifier path
+
+Update Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Page\UpdateRequest)
+ [x] Request instance
+ [x] UpdateRequest rules with optional revisions disabled
+ [x] UpdateRequest rules with optional revisions enabled
+
+Update Request (Tests\Unit\Playground\Cms\Api\Http\Requests\Snippet\UpdateRequest)
+ [x] Request instance
+ [x] UpdateRequest rules with optional revisions disabled
+ [x] UpdateRequest rules with optional revisions enabled
+
+Uuid Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\UuidTrait)
+ [x] Filter uuid
+
+Value Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\ValueTrait)
+ [x] Filter boolean
+ [x] Filter email
+ [x] Filter html
+
