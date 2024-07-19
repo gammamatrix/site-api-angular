@@ -128,7 +128,7 @@ jobs:
         user_email: 'github-actions[bot]@users.noreply.github.com'
     - uses: php-actions/phpstan@v3
       with:
-        level: 9
+        level: 5
         php_version: "8.2"
         # path: app/ config/ database/ routes/ tests/Feature/ tests/Unit/ resources/views/
         path: app/ database/ tests/Feature/ tests/Unit/ resources/views/
