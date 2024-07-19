@@ -29,7 +29,20 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Tests\\Feature\\Playground\\": "vendor/gammamatrix/playground/tests/Feature/",
+            "Tests\\Unit\\Playground\\": "vendor/gammamatrix/playground/tests/Unit/",
+            "Tests\\Feature\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Feature/",
+            "Tests\\Unit\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Unit/",
+            "Tests\\Feature\\Playground\\Cms\\": "vendor/gammamatrix/playground-cms/tests/Feature/",
+            "Tests\\Unit\\Playground\\Cms\\": "vendor/gammamatrix/playground-cms/tests/Unit/",
+            "Tests\\Feature\\Playground\\Cms\\Api\\": "vendor/gammamatrix/playground-cms-api/tests/Feature/",
+            "Tests\\Unit\\Playground\\Cms\\Api\\": "vendor/gammamatrix/playground-cms-api/tests/Unit/",
+            "Tests\\Unit\\Playground\\Cms\\Resource\\": "vendor/gammamatrix/playground-cms-resource/tests/Unit/",
+            "Tests\\Feature\\Playground\\Http\\": "vendor/gammamatrix/playground-http/tests/Feature/",
+            "Tests\\Unit\\Playground\\Http\\": "vendor/gammamatrix/playground-http/tests/Unit/",
+            "Tests\\Feature\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Feature/",
+            "Tests\\Unit\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Unit/"
         }
     },
     "scripts": {
@@ -50,7 +63,7 @@
         ],
         "test": "vendor/bin/phpunit",
         "format": "vendor/bin/php-cs-fixer fix",
-        "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max"
+        "analyse": "vendor/bin/phpstan analyse --verbose --debug --level 5"
     },
     "extra": {
         "laravel": {

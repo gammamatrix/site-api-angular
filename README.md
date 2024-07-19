@@ -1,7 +1,8 @@
 # Site: Playground API and Angular SPA Integration
 
 [![Playground CI Workflow](https://github.com/gammamatrix/site-api-angular/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/site-api-angular/testing/develop/testdox.txt)
-[![Test Coverage](https://img.shields.io/badge/coverage-%2087%25-brightgreen)]([tests](https://raw.githubusercontent.com/gammamatrix/site-api-angular/testing/develop/testdox.txt))
+[![Test Coverage](https://raw.githubusercontent.com/gammamatrix/site-api-angular/testing/develop/coverage.svg)](tests)
+[![PHPStan Level 5 src and tests](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L133)
 
 
 Site: Playground API and Angular SPA Integration Package for [Laravel v11](https://laravel.com/docs/11.x) and [Angular v16, v17, v18](https://angular.dev/) applications.

@@ -103,22 +103,21 @@ jobs:
         php_extensions: intl
         version: 2.x
     - uses: php-actions/phpunit@v3
-      # env:
-      #   XDEBUG_MODE: coverage
+      env:
+        XDEBUG_MODE: coverage
       with:
         version: "11.0"
         php_version: "8.2"
-        # php_extensions: intl xdebug
-        php_extensions: intl
+        php_extensions: intl xdebug
         configuration: phpunit-ci.xml
-        # coverage_clover: clover.xml
-        # coverage_text: true
+        coverage_clover: clover.xml
+        coverage_text: true
         memory_limit: "1024M"
-    # - name: Make code coverage badge
-    #   uses: timkrase/phpunit-coverage-badge@v1.2.1
-    #   with:
-    #     coverage_badge_path: output/coverage.svg
-    #     push_badge: false
+    - name: Make code coverage badge
+      uses: timkrase/phpunit-coverage-badge@v1.2.1
+      with:
+        coverage_badge_path: output/coverage.svg
+        push_badge: false
     - name: Git push to testing/develop branch
       uses: peaceiris/actions-gh-pages@v4
       with:
@@ -131,7 +130,8 @@ jobs:
       with:
         level: 9
         php_version: "8.2"
-        path: app/ config/ database/ routes/ tests/Feature/ tests/Unit/ resources/views/
+        # path: app/ config/ database/ routes/ tests/Feature/ tests/Unit/ resources/views/
+        path: app/ database/ tests/Feature/ tests/Unit/ resources/views/
         args: --verbose --debug
     - name: Stopping timer
       if: ${{ !cancelled() }}
