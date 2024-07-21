@@ -7,6 +7,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\JsonResponse;
+use Laravel\Sanctum\PersonalAccessToken;
 
 class LoginController extends Controller
 {
@@ -99,9 +100,6 @@ class LoginController extends Controller
         return redirect('/');
     }
 
-    /**
-     * @param array<string, mixed> $config
-     */
     protected function destroyTokens(
         Authenticatable $user,
         Request $request,
