@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-07-19 03:34:42</timestamp>
+  <timestamp>2024-07-21 06:54:32</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>441</methodCount>
+    <methodCount>442</methodCount>
     <crapMethodCount>12</crapMethodCount>
     <crapLoad>199</crapLoad>
-    <totalCrap>6375.82</totalCrap>
-    <crapMethodPercent>2.72</crapMethodPercent>
+    <totalCrap>6425.82</totalCrap>
+    <crapMethodPercent>2.71</crapMethodPercent>
   </stats>
   <methods>
     <method>
@@ -19,6 +19,28 @@
       <fullMethod>authenticate(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse</fullMethod>
       <crap>20</crap>
       <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Http\Controllers</package>
+      <className>App\Http\Controllers\LoginController</className>
+      <methodName>logout</methodName>
+      <methodSignature>logout(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>logout(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Http\Controllers</package>
+      <className>App\Http\Controllers\LoginController</className>
+      <methodName>destroyTokens</methodName>
+      <methodSignature>destroyTokens(Illuminate\Contracts\Auth\Authenticatable $user, Illuminate\Http\Request $request): void</methodSignature>
+      <fullMethod>destroyTokens(Illuminate\Contracts\Auth\Authenticatable $user, Illuminate\Http\Request $request): void</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
       <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -1788,8 +1810,8 @@
       <methodName>filterBits</methodName>
       <methodSignature>filterBits($value, $exponent): int</methodSignature>
       <fullMethod>filterBits($value, $exponent): int</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
+      <crap>3</crap>
+      <complexity>3</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -2186,17 +2208,6 @@
       <fullMethod>about(): void</fullMethod>
       <crap>7</crap>
       <complexity>7</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Http</package>
-      <className>Playground\Http\ServiceProvider</className>
-      <methodName>version</methodName>
-      <methodSignature>version(): string</methodSignature>
-      <fullMethod>version(): string</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>

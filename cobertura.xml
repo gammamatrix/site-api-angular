@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.67166903265058" branch-rate="0" lines-covered="3312" lines-valid="4931" branches-covered="0" branches-valid="0" complexity="1289" version="0.4" timestamp="1721360082">
+<coverage line-rate="0.66828184938421" branch-rate="0" lines-covered="3310" lines-valid="4953" branches-covered="0" branches-valid="0" complexity="1298" version="0.4" timestamp="1721544872">
   <sources>
     <source>/app</source>
   </sources>
@@ -13,9 +13,9 @@
         </class>
       </classes>
     </package>
-    <package name="app/Http/Controllers/LoginController.php" line-rate="0.096774193548387" branch-rate="0" complexity="5">
+    <package name="app/Http/Controllers/LoginController.php" line-rate="0.054545454545455" branch-rate="0" complexity="14">
       <classes>
-        <class name="App\Http\Controllers\LoginController" filename="app/Http/Controllers/LoginController.php" line-rate="0.096774193548387" branch-rate="0" complexity="5">
+        <class name="App\Http\Controllers\LoginController" filename="app/Http/Controllers/LoginController.php" line-rate="0.054545454545455" branch-rate="0" complexity="14">
           <methods>
             <method name="authenticate" signature="Illuminate\Http\Request $request" line-rate="0" branch-rate="0" complexity="4">
               <lines>
@@ -23,37 +23,69 @@
                 <line number="19" hits="0"/>
                 <line number="20" hits="0"/>
                 <line number="21" hits="0"/>
-                <line number="23" hits="0"/>
+                <line number="22" hits="0"/>
                 <line number="24" hits="0"/>
+                <line number="25" hits="0"/>
                 <line number="26" hits="0"/>
-                <line number="31" hits="0"/>
-                <line number="33" hits="0"/>
-                <line number="34" hits="0"/>
+                <line number="27" hits="0"/>
+                <line number="28" hits="0"/>
+                <line number="30" hits="0"/>
                 <line number="35" hits="0"/>
-                <line number="36" hits="0"/>
                 <line number="37" hits="0"/>
                 <line number="38" hits="0"/>
                 <line number="39" hits="0"/>
                 <line number="40" hits="0"/>
+                <line number="41" hits="0"/>
                 <line number="42" hits="0"/>
-                <line number="45" hits="0"/>
-                <line number="48" hits="0"/>
+                <line number="43" hits="0"/>
+                <line number="44" hits="0"/>
+                <line number="46" hits="0"/>
                 <line number="49" hits="0"/>
-                <line number="50" hits="0"/>
-                <line number="51" hits="0"/>
                 <line number="52" hits="0"/>
                 <line number="53" hits="0"/>
                 <line number="54" hits="0"/>
+                <line number="55" hits="0"/>
+                <line number="56" hits="0"/>
                 <line number="57" hits="0"/>
                 <line number="58" hits="0"/>
-                <line number="59" hits="0"/>
+                <line number="61" hits="0"/>
+                <line number="62" hits="0"/>
+                <line number="63" hits="0"/>
+              </lines>
+            </method>
+            <method name="logout" signature="Illuminate\Http\Request $request" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="77" hits="0"/>
+                <line number="79" hits="0"/>
+                <line number="80" hits="0"/>
+                <line number="83" hits="0"/>
+                <line number="85" hits="0"/>
+                <line number="87" hits="0"/>
+                <line number="89" hits="0"/>
+                <line number="90" hits="0"/>
+                <line number="91" hits="0"/>
+                <line number="92" hits="0"/>
+                <line number="93" hits="0"/>
+                <line number="94" hits="0"/>
+                <line number="96" hits="0"/>
+                <line number="99" hits="0"/>
+              </lines>
+            </method>
+            <method name="destroyTokens" signature="Illuminate\Contracts\Auth\Authenticatable $user, Illuminate\Http\Request $request" line-rate="0" branch-rate="0" complexity="5">
+              <lines>
+                <line number="109" hits="0"/>
+                <line number="110" hits="0"/>
+                <line number="111" hits="0"/>
+                <line number="114" hits="0"/>
+                <line number="118" hits="0"/>
+                <line number="119" hits="0"/>
               </lines>
             </method>
             <method name="token" signature="Illuminate\Http\Request $request" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="69" hits="1"/>
-                <line number="70" hits="1"/>
-                <line number="71" hits="1"/>
+                <line number="131" hits="1"/>
+                <line number="132" hits="1"/>
+                <line number="133" hits="1"/>
               </lines>
             </method>
           </methods>
@@ -62,33 +94,57 @@
             <line number="19" hits="0"/>
             <line number="20" hits="0"/>
             <line number="21" hits="0"/>
-            <line number="23" hits="0"/>
+            <line number="22" hits="0"/>
             <line number="24" hits="0"/>
+            <line number="25" hits="0"/>
             <line number="26" hits="0"/>
-            <line number="31" hits="0"/>
-            <line number="33" hits="0"/>
-            <line number="34" hits="0"/>
+            <line number="27" hits="0"/>
+            <line number="28" hits="0"/>
+            <line number="30" hits="0"/>
             <line number="35" hits="0"/>
-            <line number="36" hits="0"/>
             <line number="37" hits="0"/>
             <line number="38" hits="0"/>
             <line number="39" hits="0"/>
             <line number="40" hits="0"/>
+            <line number="41" hits="0"/>
             <line number="42" hits="0"/>
-            <line number="45" hits="0"/>
-            <line number="48" hits="0"/>
+            <line number="43" hits="0"/>
+            <line number="44" hits="0"/>
+            <line number="46" hits="0"/>
             <line number="49" hits="0"/>
-            <line number="50" hits="0"/>
-            <line number="51" hits="0"/>
             <line number="52" hits="0"/>
             <line number="53" hits="0"/>
             <line number="54" hits="0"/>
+            <line number="55" hits="0"/>
+            <line number="56" hits="0"/>
             <line number="57" hits="0"/>
             <line number="58" hits="0"/>
-            <line number="59" hits="0"/>
-            <line number="69" hits="1"/>
-            <line number="70" hits="1"/>
-            <line number="71" hits="1"/>
+            <line number="61" hits="0"/>
+            <line number="62" hits="0"/>
+            <line number="63" hits="0"/>
+            <line number="77" hits="0"/>
+            <line number="79" hits="0"/>
+            <line number="80" hits="0"/>
+            <line number="83" hits="0"/>
+            <line number="85" hits="0"/>
+            <line number="87" hits="0"/>
+            <line number="89" hits="0"/>
+            <line number="90" hits="0"/>
+            <line number="91" hits="0"/>
+            <line number="92" hits="0"/>
+            <line number="93" hits="0"/>
+            <line number="94" hits="0"/>
+            <line number="96" hits="0"/>
+            <line number="99" hits="0"/>
+            <line number="109" hits="0"/>
+            <line number="110" hits="0"/>
+            <line number="111" hits="0"/>
+            <line number="114" hits="0"/>
+            <line number="118" hits="0"/>
+            <line number="119" hits="0"/>
+            <line number="131" hits="1"/>
+            <line number="132" hits="1"/>
+            <line number="133" hits="1"/>
           </lines>
         </class>
       </classes>
@@ -4814,9 +4870,9 @@
         </class>
       </classes>
     </package>
-    <package name="vendor/gammamatrix/playground-http/src/Requests/Concerns/StoreFilter.php" line-rate="0.9746835443038" branch-rate="0" complexity="98">
+    <package name="vendor/gammamatrix/playground-http/src/Requests/Concerns/StoreFilter.php" line-rate="0.9746835443038" branch-rate="0" complexity="99">
       <classes>
-        <class name="Playground\Http\Requests\Concerns\StoreFilter" filename="vendor/gammamatrix/playground-http/src/Requests/Concerns/StoreFilter.php" line-rate="0.9746835443038" branch-rate="0" complexity="98">
+        <class name="Playground\Http\Requests\Concerns\StoreFilter" filename="vendor/gammamatrix/playground-http/src/Requests/Concerns/StoreFilter.php" line-rate="0.9746835443038" branch-rate="0" complexity="99">
           <methods>
             <method name="filterArray" signature="mixed $value" line-rate="1" branch-rate="0" complexity="4">
               <lines>
@@ -4836,7 +4892,7 @@
                 <line number="57" hits="1"/>
               </lines>
             </method>
-            <method name="filterBits" signature="$value, $exponent" line-rate="1" branch-rate="0" complexity="2">
+            <method name="filterBits" signature="$value, $exponent" line-rate="1" branch-rate="0" complexity="3">
               <lines>
                 <line number="69" hits="2"/>
                 <line number="74" hits="2"/>
@@ -5545,9 +5601,9 @@
         </class>
       </classes>
     </package>
-    <package name="vendor/gammamatrix/playground-http/src/ServiceProvider.php" line-rate="1" branch-rate="0" complexity="14">
+    <package name="vendor/gammamatrix/playground-http/src/ServiceProvider.php" line-rate="1" branch-rate="0" complexity="13">
       <classes>
-        <class name="Playground\Http\ServiceProvider" filename="vendor/gammamatrix/playground-http/src/ServiceProvider.php" line-rate="1" branch-rate="0" complexity="14">
+        <class name="Playground\Http\ServiceProvider" filename="vendor/gammamatrix/playground-http/src/ServiceProvider.php" line-rate="1" branch-rate="0" complexity="13">
           <methods>
             <method name="boot" signature="" line-rate="1" branch-rate="0" complexity="5">
               <lines>
@@ -5580,16 +5636,10 @@
                 <line number="70" hits="147"/>
                 <line number="71" hits="147"/>
                 <line number="73" hits="147"/>
-                <line number="75" hits="147"/>
+                <line number="74" hits="147"/>
                 <line number="76" hits="147"/>
+                <line number="77" hits="147"/>
                 <line number="78" hits="147"/>
-                <line number="79" hits="147"/>
-                <line number="80" hits="147"/>
-              </lines>
-            </method>
-            <method name="version" signature="" line-rate="1" branch-rate="0" complexity="1">
-              <lines>
-                <line number="85" hits="147"/>
               </lines>
             </method>
           </methods>
@@ -5615,12 +5665,10 @@
             <line number="70" hits="147"/>
             <line number="71" hits="147"/>
             <line number="73" hits="147"/>
-            <line number="75" hits="147"/>
+            <line number="74" hits="147"/>
             <line number="76" hits="147"/>
+            <line number="77" hits="147"/>
             <line number="78" hits="147"/>
-            <line number="79" hits="147"/>
-            <line number="80" hits="147"/>
-            <line number="85" hits="147"/>
           </lines>
         </class>
       </classes>
