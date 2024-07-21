@@ -15,12 +15,16 @@ class LoginController extends Controller
      */
     public function authenticate(Request $request): JsonResponse|RedirectResponse
     {
-        $credentials = $request->validate([
+        $validated = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
+            '_token' => ['required'],
         ]);
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt([
+            'email' => $validated['email'],
+            'password' => $validated['password'],
+        ])) {
             $request->session()->regenerate();
 
             if ($request->expectsJson()) {
@@ -57,6 +61,64 @@ class LoginController extends Controller
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
+    }
+
+    /**
+     * Destroy an authenticated session.
+     *
+     * @route GET /logout logout
+     * @route POST /logout
+     */
+    public function logout(Request $request): JsonResponse|RedirectResponse
+    {
+        /**
+         * @var Authenticatable $user
+         */
+        $user = $request->user();
+
+        if ($user) {
+            $this->destroyTokens($user, $request);
+        }
+
+        Auth::guard('web')->logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        if ($request->expectsJson()) {
+            $data = [
+                'message' => __('logout'),
+                'everywhere' => $request->has('all') || $request->has('everywhere'),
+                'csrf_token' => csrf_token(),
+            ];
+
+            return response()->json($data);
+        }
+
+        return redirect('/');
+    }
+
+    /**
+     * @param array<string, mixed> $config
+     */
+    protected function destroyTokens(
+        Authenticatable $user,
+        Request $request,
+    ): void {
+        if ($request->has('all') || $request->has('everywhere')) {
+            if (is_callable([$user, 'tokens'])) {
+                $user->tokens()->delete();
+            }
+        } else {
+            if (is_callable([$user, 'currentAccessToken'])) {
+                /**
+                 * @var ?PersonalAccessToken $token
+                 */
+                $token = $user->currentAccessToken();
+                $token?->delete();
+            }
+        }
     }
 
     /**

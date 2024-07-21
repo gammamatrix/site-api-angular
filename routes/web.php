@@ -32,6 +32,15 @@ Route::group([
         'uses' => 'LoginController@token',
     ]);
 
+    Route::post('/logout', [
+        'uses' => 'LoginController@logout',
+    ]);
+
+    Route::get('/logout', [
+        'as' => 'logout',
+        'uses' => 'LoginController@logout',
+    ]);
+
 });
 
 Route::group([
