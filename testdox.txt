@@ -74,9 +74,6 @@ Date Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\DateTrait)
  [x] Filter date
  [x] Filter date as carbon
 
-Example (Tests\Feature\Example)
- [x] The application returns a successful response
-
 Example (Tests\Unit\Example)
  [x] That true is true
 
@@ -293,6 +290,9 @@ Policy (Tests\Unit\Playground\Cms\Api\Policies\PagePolicy\Policy)
 
 Policy (Tests\Unit\Playground\Cms\Api\Policies\SnippetPolicy\Policy)
  [x] Policy instance
+
+Route (Tests\Feature\Route)
+ [x] The application returns a successful response for a csfr token
 
 Snippet Route (Tests\Feature\Playground\Cms\Api\Http\Controllers\Playground\SnippetRoute)
  [x] Json guest cannot see info

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-07-21 07:06:11</timestamp>
+  <timestamp>2024-07-25 18:14:39</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>442</methodCount>
@@ -56,17 +56,6 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>App\Models</package>
-      <className>App\Models\User</className>
-      <methodName>casts</methodName>
-      <methodSignature>casts(): array</methodSignature>
-      <fullMethod>casts(): array</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
       <package>App\Providers</package>
       <className>App\Providers\AppServiceProvider</className>
       <methodName>register</methodName>
@@ -85,6 +74,17 @@
       <fullMethod>boot(): void</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Providers</package>
+      <className>App\Providers\AppServiceProvider</className>
+      <methodName>about</methodName>
+      <methodSignature>about(): void</methodSignature>
+      <fullMethod>about(): void</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
