@@ -11,8 +11,6 @@ Read more on using [Site: Playground API and Angular SPA Integration at Read the
 
 ## Angular Application
 
-Currently, there is only one Angular Application.
-
 ### Site: Playground CMS UI with Angular
 
 Currently, there are two Angular applications available to use with this base Laravel application.
