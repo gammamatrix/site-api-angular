@@ -1,7 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+declare(strict_types=1);
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use Laravel\Sanctum\Http\Controllers\CsrfCookieController;
 
 // Route::get('/', function () {
 //     return view('welcome');

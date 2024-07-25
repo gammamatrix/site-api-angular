@@ -1,8 +1,13 @@
 {
-    "name": "laravel/laravel",
+    "name": "gammamatrix/site-api-angular",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Playground: This is a base application site for Laravel based Playground APIs and Angular UIs.",
+    "homepage": "https://github.com/gammamatrix/site-api-angular",
+    "keywords": [
+        "gammamatrix",
+        "playground",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.2",
@@ -63,7 +68,7 @@
         ],
         "test": "vendor/bin/phpunit",
         "format": "vendor/bin/php-cs-fixer fix",
-        "analyse": "vendor/bin/phpstan analyse --verbose --debug --level 5"
+        "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max"
     },
     "extra": {
         "laravel": {

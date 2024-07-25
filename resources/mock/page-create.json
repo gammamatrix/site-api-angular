@@ -1,0 +1,333 @@
+{
+    "data": {
+        "created_by_id": null,
+        "modified_by_id": null,
+        "owned_by_id": null,
+        "parent_id": null,
+        "page_type": null,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "start_at": null,
+        "planned_start_at": null,
+        "end_at": null,
+        "planned_end_at": null,
+        "canceled_at": null,
+        "closed_at": null,
+        "embargo_at": null,
+        "fixed_at": null,
+        "postponed_at": null,
+        "published_at": null,
+        "released_at": null,
+        "resumed_at": null,
+        "resolved_at": null,
+        "suspended_at": null,
+        "gids": 0,
+        "po": 0,
+        "pg": 0,
+        "pw": 0,
+        "only_admin": false,
+        "only_user": false,
+        "only_guest": false,
+        "allow_public": false,
+        "status": 0,
+        "rank": 0,
+        "size": 0,
+        "revision": 0,
+        "matrix": "",
+        "x": null,
+        "y": null,
+        "z": null,
+        "r": null,
+        "theta": null,
+        "rho": null,
+        "phi": null,
+        "elevation": null,
+        "latitude": null,
+        "longitude": null,
+        "active": true,
+        "canceled": false,
+        "closed": false,
+        "completed": false,
+        "fixed": false,
+        "flagged": false,
+        "internal": false,
+        "locked": false,
+        "pending": false,
+        "planned": false,
+        "problem": false,
+        "published": false,
+        "released": false,
+        "retired": false,
+        "resolved": false,
+        "sitemap": false,
+        "suspended": false,
+        "unknown": false,
+        "is_external": false,
+        "is_redirect": false,
+        "redirect_delay": 0,
+        "status_code": 0,
+        "route": "string",
+        "label": "",
+        "title": "",
+        "byline": "",
+        "slug": null,
+        "url": "",
+        "description": "",
+        "introduction": "",
+        "content": null,
+        "summary": null,
+        "icon": "",
+        "image": "",
+        "avatar": "",
+        "ui": [],
+        "assets": [],
+        "meta": [],
+        "notes": [],
+        "options": [],
+        "sources": []
+    },
+    "meta": {
+        "id": null,
+        "rules": {
+            "owned_by_id": [
+                "nullable",
+                "uuid"
+            ],
+            "parent_id": [
+                "nullable",
+                "uuid"
+            ],
+            "page_type": [
+                "nullable",
+                "string"
+            ],
+            "start_at": [
+                "nullable",
+                "string"
+            ],
+            "planned_start_at": [
+                "nullable",
+                "string"
+            ],
+            "end_at": [
+                "nullable",
+                "string"
+            ],
+            "planned_end_at": [
+                "nullable",
+                "string"
+            ],
+            "canceled_at": [
+                "nullable",
+                "string"
+            ],
+            "closed_at": [
+                "nullable",
+                "string"
+            ],
+            "embargo_at": [
+                "nullable",
+                "string"
+            ],
+            "fixed_at": [
+                "nullable",
+                "string"
+            ],
+            "postponed_at": [
+                "nullable",
+                "string"
+            ],
+            "published_at": [
+                "nullable",
+                "string"
+            ],
+            "released_at": [
+                "nullable",
+                "string"
+            ],
+            "resolved_at": [
+                "nullable",
+                "string"
+            ],
+            "resumed_at": [
+                "nullable",
+                "string"
+            ],
+            "suspended_at": [
+                "nullable",
+                "string"
+            ],
+            "gids": [
+                "integer"
+            ],
+            "po": [
+                "integer"
+            ],
+            "pg": [
+                "integer"
+            ],
+            "pw": [
+                "integer"
+            ],
+            "only_admin": [
+                "boolean"
+            ],
+            "only_user": [
+                "boolean"
+            ],
+            "only_guest": [
+                "boolean"
+            ],
+            "allow_public": [
+                "boolean"
+            ],
+            "status": [
+                "integer"
+            ],
+            "rank": [
+                "integer"
+            ],
+            "size": [
+                "integer"
+            ],
+            "active": [
+                "boolean"
+            ],
+            "canceled": [
+                "boolean"
+            ],
+            "closed": [
+                "boolean"
+            ],
+            "completed": [
+                "boolean"
+            ],
+            "duplicate": [
+                "boolean"
+            ],
+            "fixed": [
+                "boolean"
+            ],
+            "flagged": [
+                "boolean"
+            ],
+            "internal": [
+                "boolean"
+            ],
+            "locked": [
+                "boolean"
+            ],
+            "pending": [
+                "boolean"
+            ],
+            "planned": [
+                "boolean"
+            ],
+            "problem": [
+                "boolean"
+            ],
+            "published": [
+                "boolean"
+            ],
+            "released": [
+                "boolean"
+            ],
+            "retired": [
+                "boolean"
+            ],
+            "resolved": [
+                "boolean"
+            ],
+            "sitemap": [
+                "boolean"
+            ],
+            "suspended": [
+                "boolean"
+            ],
+            "unknown": [
+                "boolean"
+            ],
+            "label": [
+                "string"
+            ],
+            "title": [
+                "string"
+            ],
+            "byline": [
+                "string"
+            ],
+            "slug": [
+                "nullable",
+                "string"
+            ],
+            "url": [
+                "string"
+            ],
+            "description": [
+                "string"
+            ],
+            "introduction": [
+                "string"
+            ],
+            "content": [
+                "nullable",
+                "string"
+            ],
+            "summary": [
+                "nullable",
+                "string"
+            ],
+            "icon": [
+                "string"
+            ],
+            "image": [
+                "string"
+            ],
+            "avatar": [
+                "string"
+            ],
+            "ui": [
+                "nullable",
+                "array"
+            ],
+            "assets": [
+                "nullable",
+                "array"
+            ],
+            "meta": [
+                "nullable",
+                "array"
+            ],
+            "options": [
+                "nullable",
+                "array"
+            ],
+            "sources": [
+                "nullable",
+                "array"
+            ],
+            "_return_url": [
+                "nullable",
+                "url"
+            ]
+        },
+        "session_user_id": "9baa6092-a30f-461a-a5fc-5132b3264b91",
+        "timestamp": "2024-07-14T06:15:11.869964Z",
+        "validated": [],
+        "info": {
+            "model_attribute": "title",
+            "model_label": "Page",
+            "model_label_plural": "Pages",
+            "model_route": "playground.cms.api.pages",
+            "model_slug": "page",
+            "model_slug_plural": "pages",
+            "module_label": "CMS",
+            "module_label_plural": "Matrices",
+            "module_route": "playground.cms.api",
+            "module_slug": "cms",
+            "privilege": "playground-cms-api:page",
+            "table": "cms_pages"
+        }
+    }
+}

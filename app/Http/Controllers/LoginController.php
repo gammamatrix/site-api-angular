@@ -1,12 +1,13 @@
 <?php
 
+declare(strict_types=1);
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Sanctum\PersonalAccessToken;
 
 class LoginController extends Controller
@@ -56,6 +57,7 @@ class LoginController extends Controller
                     'email' => 'The provided credentials do not match our records.',
                 ],
             ];
+
             return response()->json($payload, 422);
         }
 
